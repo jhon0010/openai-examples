@@ -1,0 +1,16 @@
+{
+    "name": "google_search",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "search_keyword": {
+          "type": "string",
+          "description": "A great search keyword that luckely got the results you are looking for"
+        }
+      },
+      "required": [
+        "search_keyword"
+      ]
+    },
+    "description": "Google search to return results based on search of keywords"
+  }

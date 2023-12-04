@@ -15,9 +15,11 @@ class OpenAIService:
 
     DAVINCI_TEXT_MODEL = "text-davinci-003"
     GPT3_MODEL = 'gpt-3.5-turbo'
+    GPT4_TURBO_MODEL = 'gpt-4-1106-preview'
+    CURRENT_MODEL = GPT4_TURBO_MODEL
 
     def __init__(self):
-        openai.api_key = os.getenv("OPEN_AI_API_KEY", "not-found")
+        openai.api_key = os.getenv("OPENAI_API_KEY", "not-found")
 
     """
     A function to generate a chat getted a prompt and a list of messages.
@@ -45,9 +47,9 @@ class OpenAIService:
                 )
                 client = OpenAI(api_key=openai.api_key)
                 chat = client.chat.completions.create(
-                    model="gpt-3.5-turbo", messages=messages
+                    model=OpenAIService.CURRENT_MODEL, messages=messages
                 )
-            
+            print(chat)
             reply = chat.choices[0].message.content
             print(f"ChatGPT: {reply}")
             messages.append({"role": "assistant", "content": reply})
@@ -56,4 +58,4 @@ class OpenAIService:
             # save messages to a file (chat history)
             with open(f'chat_history {datetime.datetime.now()}.txt', "w") as f:
                 for message in messages:
-                    f.write(f"{message['role']}: {message['content']}\n")
+                    f.write({message})

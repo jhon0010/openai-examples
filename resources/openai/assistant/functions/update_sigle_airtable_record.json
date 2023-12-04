@@ -1,0 +1,31 @@
+{
+    "name": "update_sigle_airtable_record",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "base_id": {
+          "type": "string",
+          "description": "base_id of the airetable url, normally this is the first id in the url. For example, in the url below, the base_id = appXMW95SJTHF5gZV in the URL = https://airtable.com/appXMW95SJTHF5gZV/tblXcps5szISfWoRb/viwO1db7QPUB3rskl?blocks=hide"
+        },
+        "table_id": {
+          "type": "string",
+          "description": "table_id of the airetable url, normally this is the second id in the url. For example, in the url below, the table_id = tblXcps5szISfWoRb in the URL = https://airtable.com/appXMW95SJTHF5gZV/tblXcps5szISfWoRb/viwO1db7QPUB3rskl?blocks=hide"
+        },
+        "id": {
+          "type": "string",
+          "description": "The id of the record you want to update"
+        },
+        "fields": {
+            "type": "object",
+            "description": "The data to be updated, make sure to include the company name as well e.g. id data to be updated is address data then should be: { 'company_name':'apple', 'address':'123 Main St'  }"
+          }
+      },
+      "required": [
+        "base_id",
+        "table_id",
+        "id",
+        "fields"
+      ]
+    },
+    "description": "Update a single record on airtable"
+  }
