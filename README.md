@@ -1,4 +1,4 @@
-# openai-examples
+# OpenAI Examples
 
 # Create a virtual env using this command
 
@@ -34,4 +34,28 @@
 
 ```
     /bin/python3 /${your-path}/openai-examples/src/main.py
+```
+
+# Open AI - Assistances examples 
+
+Take a look at the following ROLES examples:
+
+```
+    /${your-path}/resources/openai/assistant/roles
+```
+
+Take a look at the following FUNCTIONS (skills) examples:
+
+```
+    /${your-path}/resources/openai/assistant/functions
+```
+
+# More code examples 
+
+Take a look at the following examples:
+
+## Using [Microsoft autogen](ttps://www.microsoft.com/en-us/research/project/autogen/) h to orquestrate and Agent conversation
+
+```
+    /${your-path}/openai-examples/src/research-agents-main/README.md
 ```
