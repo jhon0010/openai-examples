@@ -54,7 +54,7 @@ Take a look at the following FUNCTIONS (skills) examples:
 
 Take a look at the following examples:
 
-## Using [Microsoft autogen](ttps://www.microsoft.com/en-us/research/project/autogen/) h to orquestrate and Agent conversation
+## Using [Microsoft autogen](https://www.microsoft.com/en-us/research/project/autogen/) to orquestrate and Agent conversation
 
 ```
     /${your-path}/openai-examples/src/research-agents-main/README.md
