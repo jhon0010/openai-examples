@@ -1,3 +1,7 @@
+# Taked from 
+
+https://github.com/JayZeeDesign/researcher-gpt
+
 # How to use it 
 
 ## Insall the requirements
